@@ -28,14 +28,19 @@
 }
 
 .nav-brand a {
-  color: var(--text-primary);
   text-decoration: none;
-  transition: color 0.3s ease;
-  font-weight: 700;
+  display: flex;
+  align-items: center;
 }
 
-.nav-brand a:hover {
-  color: var(--primary-color);
+.nav-logo {
+  height: 40px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.nav-logo:hover {
+  transform: scale(1.05);
 }
 
 .nav-links {
@@ -43,7 +48,7 @@
   gap: clamp(1rem, 3vw, 2.5rem);
 }
 
-.nav-links a {
+.nav-links a, .nav-links Link {
   text-decoration: none;
   color: rgba(17,17,17,0.85);
   font-weight: 600;
@@ -52,10 +57,11 @@
   padding: 0.5rem 0;
   font-size: clamp(0.9rem, 2vw, 1rem);
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .nav-links a:hover {
-  color: white;
+  color: #c55a7a;
 }
 
 .nav-links a::after {
@@ -65,8 +71,31 @@
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #3b82f6;
+  background-color: #c55a7a;
   transition: width 0.3s ease;
+}
+
+/* Project pages navigation styles */
+.project-page .nav-links a::after {
+  width: 0;
+  transition: width 0.3s ease;
+}
+
+.project-page .nav-links a:hover::after {
+  width: 100%;
+}
+
+.project-page .nav-links a.active::after {
+  width: 0;
+}
+
+/* Home page navigation styles */
+.home-page .nav-links a.active::after {
+  width: 100%;
+}
+
+.home-page .nav-links a:hover::after {
+  width: 100%;
 }
 
 .nav-links a:hover::after,
@@ -75,7 +104,7 @@
 }
 
 .nav-links a.active {
-  color: white;
+  color: #c55a7a;
 }
 
 /* Mobile menu */

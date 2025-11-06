@@ -1,0 +1,7 @@
+.project-description {
+  color: var(--text-primary);
+  line-height: 1.6;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 0 1rem;
+}
