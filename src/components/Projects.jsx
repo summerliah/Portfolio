@@ -12,13 +12,11 @@ const Projects = () => {
   const featuredProjects = [
     {
       title: "Graphic Design Posters",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eros dui, tincidunt at dictum sit amet, blandit ac mauris. Sed maximus accumsan orci, eget sodales.",
       icon: "📄",
       link: "/projects/graphic-design"
     },
     {
       title: "Mobile and Web Design",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eros dui, tincidunt at dictum sit amet, blandit ac mauris. Sed maximus accumsan orci, eget sodales.",
       icon: "🖥️",
       link: "/projects/web-design"
     }
